@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="windows-1252">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="calc.js"></script>
+	<style type="text/css">
+		button	{
+			width:100%;
+		}
+		#x14{
+			background-color: red;
+		}
+		#x21,#x22,#x23,#x31,#x32,#x34,#x41,#x43,#x44,#x51,#x52 {
+			visibility: hidden;
+		}
+		#display {
+			height: 30px;
+			text-align: right;
+			padding: 5px;
+			font-size: 20px;
+		}
+
+		#calc{
+			border: 2px solid black;
+			padding: 10px;
+			border-radius: 10px;
+			background: linear-gradient(to right, gray , lightgray);
+		}
+
+		#mem {
+			display: none;
+			position: absolute;
+			margin: 10px;
+		}
+
+	</style>
+</head>
+<body style="width:100%; height: 100%;">
+	<table>
+		<tbody>
+			<tr>
+				<td valign="bottom">
+				<ul id="list" style="margin-right: 30px; list-style: none">
+					<li>36</li>
+					<li>164</li>
+					<li>1276</li>
+					<li>40968</li>
+					<li>262144</li>
+					<li>21642060648</li>
+					<li>4311744512</li>
+					<li>1719869184</li>
+				</ul>
+				</td>
+				<td valign="top">
+					<table id="calc" cellspacing="0" cellpadding="0" style="margin:0px auto;margin-top:200px;">
+						<tbody>
+							<tr>
+								<td colspan="11">
+								<p id="mem">M</p>
+								<input type="text" name="display" id="display" value="0" autofocus readonly>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" ><button id="x11">x->M</button></td>
+								<td align="center" ><button id="x12">MR</button></td>
+								<td align="center" ><button id="x13">M+</button></td>
+								<td align="center" ><button id="x14">Start</button></td>
+							</tr>
+								<td align="center" ><button id="x21">o</button></td>
+								<td align="center" ><button id="x22">o</button></td>
+								<td align="center" ><button id="x23">o</button></td>
+								<td align="center" ><button id="x24">CE</button></td>
+							</tr>
+							<tr>
+								<td align="center" ><button id="x31">o</button></td>
+								<td align="center" ><button id="x32">o</button></td>
+								<td align="center" ><button id="x33">X²</button></td>
+								<td align="center" ><button id="x34">o</button></td>
+							</tr>
+							<tr>
+								<td align="center" ><button id="x41">o</button></td>
+								<td align="center" ><button id="x42">2</button></td>
+								<td align="center" ><button id="x43">o</button></td>
+								<td align="center" ><button id="x44">o</button></td>
+							</tr>
+							<tr>
+								<td align="center" ><button id="x51">o</button></td>
+								<td align="center" ><button id="x52">o</button></td>
+								<td align="center" ><button id="x53">+</button></td>
+								<td align="center" ><button id="x54">=</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
